@@ -1,0 +1,7 @@
+    public GirlFriend(T name, U age) {
+        this.name = name;
+        this.age = age;
+    }
+ 
+    public T getName() {
+        return name;
