@@ -1,0 +1,7 @@
+    public void setName(T name) {
+        this.name = name;
+    }
+ 
+    public U getAge() {
+        return age;
+    }
