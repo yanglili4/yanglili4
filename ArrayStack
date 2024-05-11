@@ -1,0 +1,20 @@
+@Test
+public void testArrayStack() {
+   
+    ArrayStack<Integer> stack = new ArrayStack<>(10);
+    assertTrue(stack.isEmpty());
+    assertEquals(0, stack.size());
+
+    stack.push(1);
+    stack.push(2);
+    stack.push(3);
+    assertFalse(stack.isEmpty());
+    assertEquals(3, stack.size());
+    assertEquals(3, (int) stack.pop());
+    assertEquals(2, (int) stack.peek());
+    assertEquals(2, (int) stack.pop());
+    assertEquals(1, (int) stack.pop());
+
+    assertThrows(EmptyStackException.class, stack::pop);
+    assertThrows(EmptyStackException.class, stack::peek);
+}
