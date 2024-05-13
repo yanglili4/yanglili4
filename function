@@ -1,0 +1,5 @@
+<function>``func GetOrder(ctx *gin.Context, req *OrderReq) (*OrderResp, error) {
+   if req.OrderId == nil {
+      logs.CtxError(ctx, "OrderId is nil")
+      return nil, common.NewError(common.ReqError, "OrderId is nil")
+   }
