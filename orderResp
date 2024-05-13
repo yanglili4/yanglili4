@@ -1,0 +1,5 @@
+   orderResp, err := order.GetOrder(req.OrderId)
+   if err != nil {
+      logs.CtxError(ctx, "Get Order error")
+      return nil, err
+   }
