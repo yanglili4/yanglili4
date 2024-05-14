@@ -1,0 +1,9 @@
+      Matcher m = p.matcher(INPUT);
+      StringBuffer sb = new StringBuffer();
+      while(m.find()){
+         m.appendReplacement(sb,REPLACE);
+      }
+      m.appendTail(sb);
+      System.out.println(sb.toString());
+   }
+}
