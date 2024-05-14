@@ -1,0 +1,11 @@
+RegexMatches.java 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+ 
+public class RegexMatches
+{
+   private static String REGEX = "a*b";
+   private static String INPUT = "aabfooaabfooabfoobkkk";
+   private static String REPLACE = "-";
+   public static void main(String[] args) {
+      Pattern p = Pattern.compile(REGEX);
