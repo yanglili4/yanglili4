@@ -1,0 +1,9 @@
+		line(line1_x, line1_y, line1_x, WINDOW_HEIGHT);
+		line(line2_x, line2_y, line2_x, WINDOW_HEIGHT);
+		line(WINDOW_WIDTH / 2 - boss1w / 2, boss1h -90, 482, boss1h + 50);
+		line(WINDOW_WIDTH / 2 + boss1w / 2, boss1h - 90, 542, boss1h + 50);
+		putimage(WINDOW_WIDTH / 2 - boss1w / 2, -boss1h + boss1image, &i_boss1_2S, NOTSRCERASE);
+		putimage(WINDOW_WIDTH / 2 - boss1w / 2, -boss1h + boss1image, &i_boss1_2, SRCINVERT);
+		if ((boss1hp!=8)&&(p_MP->x - line1_x) > -pw && (p_MP->x - line2_x)<0&& (p_MP->y - line1_y)>-ph)			MP_HP = 0;
+	}
+ 
