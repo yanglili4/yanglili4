@@ -1,0 +1,11 @@
+	}
+	else
+	{
+		
+		if (test == 1)
+		{
+			PlaySound(L"Beam.wav", NULL, SND_FILENAME | SND_ASYNC);
+			test++;
+		}
+		setlinecolor(0xFF6666);
+		setlinestyle(PS_DASH, 5);
