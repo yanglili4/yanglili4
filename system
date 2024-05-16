@@ -1,0 +1,8 @@
+                if(a==1) {system("cls");menu1(h,num);}
+            }break;
+        case 3:
+            {
+                 History(s,num,h);    
+            }break;
+        case 4:
+            {
