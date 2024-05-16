@@ -1,0 +1,9 @@
+                int a=0;
+                scanf("%d",&a);
+                if(a==1)    exit(0);
+                else {system("cls");menu1(h,num);}
+            }break;
+        case 5:
+            {
+                char name[20];
+                    system("cls");
