@@ -1,0 +1,12 @@
+{
+    U *q;
+    q=(U*)malloc(sizeof(U));
+W:    printf("：\n");
+    scanf("%s",q->name);
+    if(search(h,q->name)) {system("cls");printf("！！！\n");_getch();system("cls");goto W;}
+    printf("：\n");
+    scanf("%s",q->mm);
+    q->next=NULL;
+    return q;
+}
+//在
